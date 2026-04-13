@@ -1,205 +1,446 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Site de portifólio">
+    <meta name="description" content="Portfólio de Henrique Rodrigues - Desenvolvedor Back-end Go | ATS By NStech">
     <meta name="author" content="Henrique Rodrigues">
-    <title>Henrique Rodrigues | Portifólio</title>
-    <link rel="icon" type="imagem/png" href="assets/imgs/icone.png">
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/imgs/icon.svg">
-    <!-- Bootstrap + Steller main styles -->
-	<link rel="stylesheet" href="assets/css/steller.css">
+    <title>Henrique Rodrigues | Portfólio</title>
+    <link rel="icon" type="image/png" href="assets/imgs/icone.png">
+    <!-- Bootstrap + Steller styles -->
+    <link rel="stylesheet" href="assets/css/steller.css">
+    <!-- Dark developer theme override -->
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page navigation -->
+    <!-- ========================
+         NAVBAR
+    ========================= -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/icon.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <span class="navbar-brand-text">&gt; hr_dev<span class="cursor-blink">_</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Serviços</a>
-                    </li>  
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Habilidades</a>
-                    </li>                   
-                    <li class="nav-item">
-                        <a target ="blank" class="- btn btn-primary rounded ml-4" href="https://wa.me/5555996005352?text=Ol%C3%A1%2C%20peguei%20seu%20contato%20no%20seu%20site%20de%20portif%C3%B3lio.%20Vamos%20conversar%3F">Fale comigo</a>
+                        <a target="_blank" class="btn btn-primary rounded ml-4"
+                           href="https://wa.me/5555996005352?text=Ol%C3%A1%2C%20peguei%20seu%20contato%20no%20seu%20site%20de%20portif%C3%B3lio.%20Vamos%20conversar%3F">
+                            Fale comigo
+                        </a>
                     </li>
                 </ul>
             </div>
-        </div>          
+        </div>
     </nav>
-    <!-- End of page navibation -->
+    <!-- End Navbar -->
 
-    <!-- Page Header -->
+    <!-- ========================
+         HERO / HEADER
+    ========================= -->
     <header class="header" id="home">
         <div class="container">
             <div class="infos">
-                <h6 class="subtitle">Olá, eu sou</h6>
-                <h6 class="title">Henrique Rodrigues</h6>
-                <p>Analista e Programador</p>
+                <h6 class="subtitle">// Olá, eu sou</h6>
+                <h6 class="title">Henrique <span>Rodrigues</span></h6>
+                <p>Desenvolvedor Back-end &nbsp;<span class="cursor-blink">|</span></p>
 
                 <div class="buttons pt-3">
-                    <a target="blank" class="btn btn-primary rounded" href="https://wa.me/5555996005352?text=Ol%C3%A1%2C%20peguei%20seu%20contato%20no%20seu%20site%20de%20portif%C3%B3lio.%20Vamos%20conversar%3F">ME CONTRATE</a>
-                    <a target ="blank" class="btn btn-dark rounded" href="assets\Henrique Rodrigues - Curriculum Vitae.pdf">DOWNLOAD CV</a>
-                </div>      
+                    <a target="_blank" class="btn btn-primary rounded"
+                       href="https://wa.me/5555996005352?text=Ol%C3%A1%2C%20peguei%20seu%20contato%20no%20seu%20site%20de%20portif%C3%B3lio.%20Vamos%20conversar%3F">
+                        ME CONTRATE
+                    </a>
+                    <a target="_blank" class="btn btn-dark rounded"
+                       href="assets/Henrique Rodrigues - Curriculum Vitae.pdf">
+                        DOWNLOAD CV
+                    </a>
+                </div>
 
                 <div class="socials mt-4">
-                    <a target ="blank" class="social-item" href="https://github.com/henriquerrodrigues"><img src="assets/imgs/git_icone.png" alt="Github" width="40" height="40"></i></a>
-                    <a target ="blank" class="social-item" href="https://www.linkedin.com/in/henrique-ribrodrigues/"><img src="assets/imgs/link_icone.png" alt="Github" width="40" height="40"></i></a>
+                    <a target="_blank" class="social-item"
+                       href="https://github.com/henriquerrodrigues"
+                       title="GitHub">
+                        <img src="assets/imgs/git_icone.png" alt="Github" width="38" height="38"
+                             style="filter: brightness(0) saturate(100%) invert(63%) sepia(68%) saturate(484%) hue-rotate(96deg) brightness(99%) contrast(101%);">
+                    </a>
+                    <a target="_blank" class="social-item"
+                       href="https://www.linkedin.com/in/henrique-ribrodrigues/"
+                       title="LinkedIn">
+                        <img src="assets/imgs/link_icone.png" alt="LinkedIn" width="38" height="38"
+                             style="filter: brightness(0) saturate(100%) invert(63%) sepia(68%) saturate(484%) hue-rotate(96deg) brightness(99%) contrast(101%);">
+                    </a>
                 </div>
-            </div>              
-            <div class="img-holder">
-                <img src="assets/imgs/eu.png" alt="">
-            </div>      
-        </div>  
+            </div>
 
-        <!-- Header-widget -->
+            <div class="img-holder">
+                <img src="assets/imgs/eu.png" alt="Henrique Rodrigues">
+            </div>
+        </div>
+
+        <!-- Stats Widget -->
         <div class="widget">
             <div class="widget-item">
-                <h2>3</h2>
-                <p>Projetos em andamento</p>
+                <h2>3+</h2>
+                <p>Projetos em produção</p>
             </div>
             <div class="widget-item">
-                <h2>15</h2>
-                <p>Projetos e completos</p>
+                <h2>6+</h2>
+                <p>Meses de experiência de DEV</p>
             </div>
             <div class="widget-item">
-                <h2>0</h2>
-                <p>Projetos aplicados</p>
+                <h2>2+</h2>
+                <p>Projetos concluídos</p>
             </div>
         </div>
     </header>
-    <!-- End of Page Header -->
-    
-    <!-- About section -->
+    <!-- End Hero -->
+
+    <!-- ========================
+         ABOUT
+    ========================= -->
     <section id="about" class="section mt-3">
         <div class="container mt-5">
             <div class="row text-center text-md-left">
-                <div class="col-md-3">
-                    <img src="assets/imgs/perfil.jpg" alt="" class="img-thumbnail mb-4">
+                <div class="col-md-3 mb-4">
+                    <img src="assets/imgs/perfil.jpg" alt="Henrique Rodrigues" class="img-thumbnail mb-2" style="width: 100%;">
                 </div>
                 <div class="pl-md-4 col-md-9">
+                    <span class="employer-tag">
+                        <span class="dot"></span>
+                        Desenvolvedor @ ATS By NStech
+                    </span>
                     <h6 class="title">Henrique Rodrigues</h6>
-                    <p class="subtitle">Programador</p>
-                    <p>Henrique Rodrigues é um jovem gaúcho de 20 anos, estudante de Bacharelado em Ciência da Computação na UFFS, atualmente no 6º semestre. Ele está em busca de sua primeira vaga como desenvolvedor de software.</p>
-                    <p>Possui experiência profissional relevante na área de TI. Seu início foi como Jovem Aprendiz no Setor de TI do Hospital Regional do Oeste, onde realizou manutenção de hardware, formatações, backups e atendimento ao usuário. Atualmente, trabalha como Analista Júnior de Sistemas, Segurança e Infraestrutura na Expresso São Miguel, onde suas responsabilidades incluem monitoramento de ambientes com Zabbix. Ele também realiza tratativas com fornecedores, e participa de projetos de infraestrutura de TI.</p>
-                    <P>Em termos de competências técnicas, Henrique demonstra conhecimento em diversas linguagens de programação, como JavaScript, Java, PHP, C, C#, Python e SQL. Ele também tem experiência com desenvolvimento de sistemas CRUD e criação de sites em PHP. Seus projetos concluídos incluem sistemas de gestão de frotas e um sistema de bazar com manipulação de PDF para o Hospital Regional do Oeste.</P>
-                    <p>Em desenvolvimento, atualmente, o sistema para o comércio de varejo de celulares - Worldcell - e o Mentor(projeto compartilhado), sistema de agendamento e serviços para clínicas psicológicas.</p>
-                    <p>Com um perfil proativo e experiência em infraestrutura e suporte, Henrique busca agora aplicar seus conhecimentos em desenvolvimento de software.</p>          
+                    <p class="subtitle" style="font-size: 0.85rem;">Desenvolvedor Back-end · Ciência da Computação / UFFS</p>
+
+                    <p>
+                        Desenvolvedor back-end focado em Go, com experiência em construção de APIs REST,
+                        integração de serviços e desenvolvimento de sistemas robustos. Atualmente atua na
+                        <strong style="color: #e6edf3;">ATS By NStech</strong>, onde trabalha com Go, OAuth,
+                        JWT, WebSocket, Swagger API e outras tecnologias modernas do ecossistema de
+                        desenvolvimento back-end.
+                    </p>
+                    <p>
+                        Estudante de Bacharelado em Ciência da Computação na UFFS. Possui histórico profissional
+                        em TI: iniciou como Jovem Aprendiz no setor de TI do Hospital Regional do Oeste,
+                        onde atuou em manutenção de hardware, backups e suporte ao usuário. Em seguida,
+                        passou pela Expresso São Miguel como Analista Júnior de Sistemas, Segurança e
+                        Infraestrutura, com experiência em monitoramento com Zabbix e infraestrutura de TI.
+                    </p>
+                    <p>
+                        Além do trabalho técnico, mantém projetos próprios como o site da
+                        <a href="https://worldcell.net.br/" target="_blank">Worldcell Telefonia</a> e
+                        está desenvolvendo um SaaS financeiro que cuida do orçamento mensal com diversas ferramentas.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End About -->
 
-    <!-- Service section -->
-    <section id="service" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Serviços</h6>
-            <h6 class="section-title mb-4">Alguns projetos em produção</h6>
-            <p class="mb-5 pb-4">Projetos para resolver problemas sob demanda. <br>(Indisponíveis no momento).</p>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-crown"></i>  
-                            <h5>Sistema Bazar</h5>
-<!--                             <img src="assets/imgs/bazar.png" alt="" class="img-thumbnail mb-4">
- -->                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-desktop"></i>
-                            <h5>Sistema Comercial</h5>
-<!--                             <img src="assets/imgs/worldcell.png" alt="" class="img-thumbnail mb-4">
- -->                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-mobile"></i>
-                            <h5>App copia e cola</h5>
-<!--                             <img src="assets/imgs/copiacola.png" alt="" class="img-thumbnail mb-4">
--->                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-bar-chart"></i>
-                            <h5>Mentor.psc</h5>
-<!--                             <img src="assets/imgs/mentor.png" alt="" class="img-thumbnail mb-4">
- -->                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Sectoin -->
-
-    <!-- Skills section -->
+    <!-- ========================
+         SKILLS
+    ========================= -->
     <section id="skills" class="section">
         <div class="container text-center">
             <h6 class="subtitle">Habilidades</h6>
-            <h6 class="section-title mb-4">Porque me escolher</h6>
-            <p class="mb-5 pb-4">Habilidades que tenho desenvolvido ao longo da faculdade:</p>
+            <h6 class="section-title mb-2">Stack &amp; Tecnologias</h6>
+            <p class="mb-5">Competências desenvolvidas na faculdade, no trabalho e em projetos próprios.</p>
 
             <div class="row text-left">
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Front-end</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
+
+                <!-- Back-end -->
+                <div class="col-12 mb-4">
+                    <div class="skills-category">
+                        <p class="skill-cat-title">Back-end &amp; APIs</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Go</span>
+                            <span class="skill-tag highlight">API REST</span>
+                            <span class="skill-tag highlight">OAuth</span>
+                            <span class="skill-tag highlight">JWT</span>
+                            <span class="skill-tag highlight">WebSocket</span>
+                            <span class="skill-tag highlight">Middleware</span>
+                            <span class="skill-tag highlight">Swagger API</span>
+                            <span class="skill-tag">REST</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Back-end</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+
+                <!-- Banco de Dados -->
+                <div class="col-md-6 mb-4">
+                    <div class="skills-category">
+                        <p class="skill-cat-title">Banco de Dados</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">SQL</span>
+                            <span class="skill-tag highlight">DBeaver</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Dinamicidade entre linguagens</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+
+                <!-- Ferramentas -->
+                <div class="col-md-6 mb-4">
+                    <div class="skills-category">
+                        <p class="skill-cat-title">Ferramentas &amp; Controle de Versão</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Bitbucket</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">JSON</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Comunicação</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+
+                <!-- Conceitos -->
+                <div class="col-md-6 mb-4">
+                    <div class="skills-category">
+                        <p class="skill-cat-title">Conceitos &amp; Paradigmas</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">POO</span>
+                            <span class="skill-tag highlight">Debug</span>
+                            <span class="skill-tag">CRUD</span>
+                            <span class="skill-tag">Data Structure</span>
+                            <span class="skill-tag">DevOps</span>
+                        </div>
                     </div>
                 </div>
-            </div>  
+
+                <!-- Soft Skills -->
+                <div class="col-md-6 mb-4">
+                    <div class="skills-category">
+                        <p class="skill-cat-title">Soft Skills</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Comunicação</span>
+                            <span class="skill-tag highlight">Habilidades Analíticas</span>
+                            <span class="skill-tag">Proatividade</span>
+                            <span class="skill-tag">Resolução de Problemas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proficiência geral -->
+                <div class="col-12 mt-2">
+                    <div class="row text-left">
+                        <div class="col-sm-6 mb-3">
+                            <p class="progress-label">Back-end Development</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <p class="progress-label">Go (Linguagem)</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <p class="progress-label">APIs &amp; Integrações</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <p class="progress-label">Dinamicidade entre Linguagens</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
-    <!-- End of Skills sections -->
-	<!-- core  -->
+    <!-- End Skills -->
+
+    <!-- ========================
+         PROJECTS
+    ========================= -->
+    <section id="projects" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Projetos</h6>
+            <h6 class="section-title mb-2">Projetos em Destaque</h6>
+            <p class="mb-5">Sistemas desenvolvidos e em desenvolvimento para clientes reais.</p>
+
+            <div class="row text-left">
+
+                <!-- Projeto 1: Worldcell Site -->
+                <div class="col-md-4 mb-4 d-flex">
+                    <div class="project-card w-100">
+                        <div class="project-img-wrap">
+                            <a href="https://worldcell.net.br/" target="_blank">
+                                <img src="assets/imgs/worldcell.png"
+                                     alt="Site Worldcell Telefonia"
+                                     class="project-card-img">
+                            </a>
+                        </div>
+                        <div class="project-card-body">
+                            <span class="project-status status-live">&#9679; Em produção</span>
+                            <h5 class="project-title">Worldcell Telefonia</h5>
+                            <p class="project-desc">
+                                Site comercial da Worldcell Telefonia. Catálogo de produtos,
+                                integração com sistema interno de gestão e gerador de prompts de IA para
+                                otimizar a criação de posts no site e automatizar o trabalho da equipe.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="project-tech">PHP</span>
+                                <span class="project-tech">JavaScript</span>
+                                <span class="project-tech">MySQL</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://worldcell.net.br/" target="_blank" class="btn-outline-green">
+                                    Visitar Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2: Gerador de Prompt IA -->
+                <div class="col-md-4 mb-4 d-flex">
+                    <div class="project-card w-100">
+                        <div class="project-img-wrap">
+                            <img src="assets/imgs/gerador-prompt.png"
+                                 alt="Gerador de Prompt IA — Worldcell"
+                                 class="project-card-img">
+                        </div>
+                        <div class="project-card-body">
+                            <span class="project-status status-internal">&#9679; Uso interno</span>
+                            <h5 class="project-title">Gerador de Prompt IA — Worldcell</h5>
+                            <p class="project-desc">
+                                Sistema interno desenvolvido para a Worldcell Telefonia que utiliza
+                                inteligência artificial para otimizar e acelerar a criação de conteúdo
+                                e posts para o site, aumentando a produtividade da equipe.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="project-tech">Go</span>
+                                <span class="project-tech">API REST</span>
+                                <span class="project-tech">IA</span>
+                                <span class="project-tech">Prompt Engineering</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span style="color: var(--dev-muted); font-size: 0.8rem; font-family: 'Courier New', monospace;">// Ferramenta interna</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3: SaaS Financeiro -->
+                <div class="col-md-4 mb-4 d-flex">
+                    <div class="project-card w-100">
+                        <div class="project-img-wrap">
+                            <img src="assets/imgs/saas_financeiro.jpeg"
+                                 alt="SaaS Financeiro"
+                                 class="project-card-img">
+                        </div>
+                        <div class="project-card-body">
+                            <span class="project-status status-wip">&#9679; Em desenvolvimento</span>
+                            <h5 class="project-title">SaaS Financeiro</h5>
+                            <p class="project-desc">
+                                Plataforma SaaS de gestão financeira em desenvolvimento. Sistema completo
+                                para controle de receitas, despesas, fluxo de caixa e relatórios financeiros,
+                                pensado para pequenos e médios negócios.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="project-tech">Go</span>
+                                <span class="project-tech">API REST</span>
+                                <span class="project-tech">JWT</span>
+                                <span class="project-tech">PostgreSQL</span>
+                                <span class="project-tech">SaaS</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span style="color: var(--dev-muted); font-size: 0.8rem; font-family: 'Courier New', monospace;">// Em andamento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Projects -->
+
+    <!-- ========================
+         FOOTER
+    ========================= -->
+    <footer class="dev-footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- Brand -->
+                <div class="col-md-4 mb-4">
+                    <div class="footer-brand">&gt; hr_dev</div>
+                    <p class="footer-tagline">Desenvolvedor Back-end<br>focado em Go &amp; APIs REST</p>
+                    <div class="socials mt-3">
+                        <a target="_blank" class="social-item" href="https://github.com/henriquerrodrigues" title="GitHub">
+                            <img src="assets/imgs/git_icone.png" alt="Github" width="32" height="32"
+                                 style="filter: brightness(0) saturate(100%) invert(63%) sepia(68%) saturate(484%) hue-rotate(96deg) brightness(99%) contrast(101%);">
+                        </a>
+                        <a target="_blank" class="social-item" href="https://www.linkedin.com/in/henrique-ribrodrigues/" title="LinkedIn">
+                            <img src="assets/imgs/link_icone.png" alt="LinkedIn" width="32" height="32"
+                                 style="filter: brightness(0) saturate(100%) invert(63%) sepia(68%) saturate(484%) hue-rotate(96deg) brightness(99%) contrast(101%);">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-4 mb-4">
+                    <p class="footer-heading">Navegação</p>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">Sobre</a>
+                        <a href="#skills">Habilidades</a>
+                        <a href="#projects">Projetos</a>
+                        <a href="https://wa.me/5555996005352?text=Ol%C3%A1%2C%20peguei%20seu%20contato%20no%20seu%20site%20de%20portif%C3%B3lio.%20Vamos%20conversar%3F" target="_blank">Fale comigo</a>
+                    </div>
+                </div>
+
+                <!-- Empresas Parceiras -->
+                <div class="col-md-4 mb-4">
+                    <p class="footer-heading">Empresas Parceiras</p>
+                    <div class="partner-item">
+                        <img src="assets/imgs/perfilWorldcell.jpg"
+                             alt="Worldcell Telefonia"
+                             style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 1px solid var(--dev-border);">
+                        <a href="https://worldcell.net.br/" target="_blank" style="color: #e6edf3; text-decoration: none;">
+                            Worldcell Telefonia
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <p class="footer-copy">
+                &copy; 2025 Henrique Rodrigues
+                <br>
+                <a href="https://github.com/henriquerrodrigues" target="_blank">github.com/henriquerrodrigues</a>
+            </p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- steller js -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     <script src="assets/js/steller.js"></script>
-    
 
 </body>
 </html>
